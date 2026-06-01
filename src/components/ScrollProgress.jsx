@@ -54,7 +54,7 @@ export function ScrollProgress() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[3px] bg-black/40"
+      className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[3px]"
       role="progressbar"
       aria-valuenow={percent}
       aria-valuemin={0}

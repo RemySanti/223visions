@@ -14,7 +14,7 @@ export function Landing() {
         noindex
       />
 
-      <header className="nav-blur fixed inset-x-0 top-0 z-50 border-b border-white/10">
+      <header className="fixed inset-x-0 top-0 z-50 bg-brand-black">
         <div className="mx-auto flex h-28 max-w-4xl items-center justify-between px-4">
           <Logo className="h-24" />
           <a href={`mailto:${EMAIL}`} className="text-sm text-brand-muted hover:text-brand-offwhite">

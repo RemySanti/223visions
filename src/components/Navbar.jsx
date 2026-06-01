@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
 import { BOOKING_URL } from '../data/constants';
+import { useNavOpacity } from '../hooks/useNavOpacity';
 
 const links = [
   { to: '/', label: 'Home' },
@@ -13,30 +14,30 @@ const links = [
   { to: '/contact', label: 'Contact' },
 ];
 
-export function Navbar({ minimal = false }) {
-  const [scrolled, setScrolled] = useState(false);
+function NavBackground({ opacity }) {
+  return (
+    <div
+      className="pointer-events-none absolute inset-0 bg-brand-black"
+      style={{ opacity }}
+      aria-hidden="true"
+    />
+  );
+}
+
+export function Navbar({ minimal = false, overlay = false }) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  const navOpacity = useNavOpacity(overlay);
 
   useEffect(() => {
     setOpen(false);
   }, [location.pathname]);
 
-  const navClass = scrolled
-    ? 'nav-blur border-b border-white/10'
-    : 'bg-transparent';
-
   if (minimal) {
     return (
-      <header className={`fixed inset-x-0 top-0 z-50 ${navClass}`}>
-        <div className="mx-auto flex h-28 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header className="fixed inset-x-0 top-0 z-50">
+        <NavBackground opacity={navOpacity} />
+        <div className="relative mx-auto flex h-28 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link to="/" aria-label="223 Visions home">
             <Logo className="h-24" />
           </Link>
@@ -51,8 +52,9 @@ export function Navbar({ minimal = false }) {
   }
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${navClass}`}>
-      <div className="mx-auto flex h-32 max-w-7xl items-center justify-between px-4 sm:px-6 md:h-36 lg:px-8">
+    <header className="fixed inset-x-0 top-0 z-50">
+      <NavBackground opacity={navOpacity} />
+      <div className="relative mx-auto flex h-32 max-w-7xl items-center justify-between px-4 sm:px-6 md:h-36 lg:px-8">
         <Link to="/" aria-label="223 Visions home">
           <Logo className="h-24 md:h-28" />
         </Link>

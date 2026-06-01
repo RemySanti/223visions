@@ -31,8 +31,9 @@ export function HeroSection({
           preload="auto"
           aria-hidden="true"
         />
+        <div className="hero-top-scrim absolute inset-x-0 top-0 z-[1] h-44 md:h-52" aria-hidden="true" />
         <div className="hero-gradient absolute inset-0" />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-32 text-center sm:px-6 lg:px-8">
