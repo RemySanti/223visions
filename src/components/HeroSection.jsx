@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { BOOKING_URL } from '../data/constants';
 
 const HERO_VIDEO = '/hero.mp4';
-const HERO_POSTER = '/portfolio/weddings/1h4a0130.jpg';
+const HERO_POSTER = '/hero-poster.jpg';
 
 export function HeroSection({
   headline = "We Don't Just Capture Moments. We Create Them.",
