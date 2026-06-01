@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { BOOKING_URL } from '../data/constants';
 
+const HERO_VIDEO = '/hero.mp4';
 const HERO_POSTER = '/portfolio/weddings/1h4a0130.jpg';
 
 export function HeroSection({
@@ -19,24 +20,16 @@ export function HeroSection({
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* Replace with actual client video URL */}
         <video
           className="h-full w-full object-cover"
+          src={HERO_VIDEO}
           autoPlay
           muted
           loop
           playsInline
           poster={HERO_POSTER}
+          preload="auto"
           aria-hidden="true"
-        >
-          <source src="" type="video/mp4" />
-        </video>
-        <img
-          src={HERO_POSTER}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          loading="eager"
-          fetchPriority="high"
         />
         <div className="hero-gradient absolute inset-0" />
         <div className="absolute inset-0 bg-black/60" />
