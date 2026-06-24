@@ -6,7 +6,8 @@ export const EMAIL = 'Christian@223visions.com';
 export const INSTAGRAM = 'https://www.instagram.com/223.visions/';
 export const INSTAGRAM_HANDLE = '@223.visions';
 export const BOOKING_URL =
-  'https://links.223visions.com/widget/bookings/223-booking';
+  'https://links.223visions.com/widget/bookings/christian-bates-personal-calendar-7uzyvudli';
+export const GOOGLE_REVIEW_URL = 'https://share.google/gjUNnqGM35DZ9b0Gf';
 export const DEFAULT_OG_IMAGE = '/portfolio/weddings/1h4a0130.jpg';
 
 export const DEFAULT_DESCRIPTION =

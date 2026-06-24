@@ -3,21 +3,6 @@ import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
 import { Aperture, Monitor } from 'lucide-react';
 
-const team = [
-  {
-    name: 'Christian Bates',
-    role: 'Creative Director & Founder',
-    image: '/portfolio/portrait/1h4a0002.jpg',
-    bio: 'Leading 223 Visions with a passion for visual storytelling, hybrid production, and Atlanta-rooted creative excellence.',
-  },
-  {
-    name: 'Production Team',
-    role: 'Photo & Video Crew',
-    image: '/portfolio/events/IMG_2332.jpg',
-    bio: 'A tight roster of photographers, videographers, and editors who execute with speed, taste, and reliability.',
-  },
-];
-
 export function About() {
   return (
     <>
@@ -35,7 +20,7 @@ export function About() {
             className="overflow-hidden rounded-2xl"
           >
             <img
-              src="/portfolio/portrait/1h4a0222.jpg"
+              src="/portfolio/portrait/6s3a9749.jpg"
               alt="223 Visions behind the scenes"
               loading="lazy"
               className="aspect-[4/5] w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
@@ -73,42 +58,6 @@ export function About() {
           <div className="flex items-center gap-3 text-brand-muted">
             <Monitor className="text-brand-red" size={28} />
             <span className="text-sm uppercase tracking-wider">DaVinci &amp; Lightroom</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-display mb-12 text-center text-4xl font-bold">The Team</h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            {team.map((member, i) => (
-              <motion.article
-                key={member.name}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="card-dark overflow-hidden"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  loading="lazy"
-                  className={`w-full object-cover ${
-                    member.image.includes('/portrait/')
-                      ? 'aspect-[3/4] object-top'
-                      : 'aspect-[4/3] object-center'
-                  }`}
-                />
-                <div className="p-6">
-                  <h3 className="text-display text-2xl font-semibold">{member.name}</h3>
-                  <p className="mt-1 text-sm uppercase tracking-wider text-brand-red">
-                    {member.role}
-                  </p>
-                  <p className="mt-3 text-sm text-brand-muted">{member.bio}</p>
-                </div>
-              </motion.article>
-            ))}
           </div>
         </div>
       </section>

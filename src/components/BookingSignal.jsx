@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { CalendarCheck, X } from 'lucide-react';
 import { generateBookingSignal, randomBetween } from '../data/bookingSignals';
 
-const HIDDEN_PREFIXES = ['/internal/'];
+const HIDDEN_PREFIXES = ['/internal/', '/owner', '/contact', '/landing', '/thank-you'];
 const INITIAL_DELAY_MS = [8000, 14000];
 const INTERVAL_MS = [22000, 38000];
 const VISIBLE_MS = 5500;

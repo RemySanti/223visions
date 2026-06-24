@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ContactForm } from '../components/ContactForm';
+import { BookingExpectations } from '../components/BookingExpectations';
 import { SEOHead } from '../components/SEOHead';
 import { Logo } from '../components/Logo';
 import { EMAIL } from '../data/constants';
@@ -37,9 +38,16 @@ export function Landing() {
               Book Your Session Today
             </h1>
             <p className="mt-3 text-brand-muted">
-              500+ Happy Clients · Atlanta-Based · Fast Turnaround
+              Photography from $250 · Video from $350 · Hybrid from $550
+            </p>
+            <p className="mt-2 text-sm text-brand-muted">
+              Businesses, athletes, churches &amp; creators — Atlanta metro
             </p>
           </motion.div>
+
+          <div className="mb-8">
+            <BookingExpectations compact />
+          </div>
 
           <span id="conversion-anchor" className="sr-only">
             Conversion form anchor

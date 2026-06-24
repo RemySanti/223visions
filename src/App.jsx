@@ -5,6 +5,7 @@ import { Layout } from './components/Layout';
 import { ScrollProgress } from './components/ScrollProgress';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BookingSignal } from './components/BookingSignal';
+import { StickyBookBar } from './components/StickyBookBar';
 import { Home } from './pages/Home';
 
 const Services = lazy(() => import('./pages/Services').then((m) => ({ default: m.Services })));
@@ -18,6 +19,9 @@ const Landing = lazy(() => import('./pages/Landing').then((m) => ({ default: m.L
 const ThankYou = lazy(() => import('./pages/ThankYou').then((m) => ({ default: m.ThankYou })));
 const MarketingTierList = lazy(() =>
   import('./components/marketing/MarketingTierListPage').then((m) => ({ default: m.MarketingTierList }))
+);
+const OwnerDashboard = lazy(() =>
+  import('./components/owner/OwnerDashboard').then((m) => ({ default: m.OwnerDashboard }))
 );
 
 function PageLoader() {
@@ -99,6 +103,14 @@ function AnimatedRoutes() {
             />
             <Route path="/landing" element={<Landing />} />
             <Route
+              path="/owner"
+              element={
+                <Layout minimalNav hideFooter>
+                  <OwnerDashboard />
+                </Layout>
+              }
+            />
+            <Route
               path="/internal/marketing-roadmap"
               element={
                 <Layout minimalNav hideFooter>
@@ -127,6 +139,7 @@ export default function App() {
       <ScrollToTop />
       <ScrollProgress />
       <BookingSignal />
+      <StickyBookBar />
       <AnimatedRoutes />
     </BrowserRouter>
   );

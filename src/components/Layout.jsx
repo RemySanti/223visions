@@ -9,7 +9,7 @@ export function Layout({ children, minimalNav = false, hideFooter = false, overl
   return (
     <>
       <Navbar minimal={minimalNav} overlay={overlay} />
-      <div className="relative z-10 min-h-screen">{children}</div>
+      <div className="relative z-10 min-h-screen pb-24">{children}</div>
       {!hideFooter && <Footer />}
     </>
   );

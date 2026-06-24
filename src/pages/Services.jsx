@@ -3,11 +3,15 @@ import { motion } from 'framer-motion';
 import { Camera, Clapperboard, Layers } from 'lucide-react';
 import { SEOHead, serviceSchema } from '../components/SEOHead';
 import { CTABand } from '../components/CTABand';
+import { PackagesSection } from '../components/PackagesSection';
+import { FAQSection } from '../components/FAQSection';
+import { CORE_PACKAGES } from '../data/clientInfo';
 
 const blocks = [
   {
     title: 'Photography',
     icon: Camera,
+    startingAt: CORE_PACKAGES[0].startingAt,
     image: '/portfolio/portrait/1h4a0002.jpg',
     imageClass: 'aspect-[3/4] object-cover object-top',
     description:
@@ -23,6 +27,7 @@ const blocks = [
   {
     title: 'Videography',
     icon: Clapperboard,
+    startingAt: CORE_PACKAGES[1].startingAt,
     image: '/portfolio/video-productions/1h4a2152.jpg',
     imageClass: 'aspect-[4/3] object-cover object-center',
     description:
@@ -38,6 +43,8 @@ const blocks = [
   {
     title: 'Hybrid Coverage',
     icon: Layers,
+    startingAt: CORE_PACKAGES[2].startingAt,
+    popular: true,
     image: '/portfolio/weddings/1h4a0130.jpg',
     imageClass: 'aspect-[4/3] object-cover object-[center_20%]',
     description:
@@ -102,6 +109,14 @@ export function Services() {
                 <block.icon size={24} />
               </div>
               <h2 className="text-display text-3xl font-bold md:text-4xl">{block.title}</h2>
+              <p className="mt-2 text-sm text-brand-muted">
+                Starting at <span className="font-semibold text-brand-offwhite">${block.startingAt}</span>
+                {block.popular && (
+                  <span className="ml-2 text-xs font-bold uppercase tracking-wider text-brand-red-light">
+                    · Most Popular
+                  </span>
+                )}
+              </p>
               <p className="mt-4 leading-relaxed text-brand-muted">{block.description}</p>
               <ul className="mt-6 space-y-2">
                 {block.includes.map((item) => (
@@ -132,6 +147,10 @@ export function Services() {
           </div>
         </section>
       ))}
+
+      <PackagesSection showCore={false} showSpecialty showBookingLink />
+
+      <FAQSection />
 
       <CTABand
         headline="Not sure which service fits?"

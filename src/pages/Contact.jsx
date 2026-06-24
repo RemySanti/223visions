@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Instagram, Mail, MapPin } from 'lucide-react';
 import { ContactForm } from '../components/ContactForm';
+import { BookingExpectations } from '../components/BookingExpectations';
+import { HowItWorks } from '../components/HowItWorks';
 import { SEOHead, localBusinessSchema } from '../components/SEOHead';
 import { EMAIL, INSTAGRAM, INSTAGRAM_HANDLE } from '../data/constants';
 
@@ -29,7 +31,8 @@ export function Contact() {
             transition={{ delay: 0.1 }}
             className="mx-auto mt-4 max-w-xl text-brand-muted"
           >
-            Atlanta Photography &amp; Videography — tell us about your project.
+            Complete the form below for an accurate quote. Atlanta photography, videography, and
+            hybrid coverage — businesses, athletes, churches, and creators.
           </motion.p>
         </div>
       </section>
@@ -47,6 +50,8 @@ export function Contact() {
           </div>
 
           <div className="space-y-8">
+            <BookingExpectations />
+
             <div className="card-dark p-8">
               <h2 className="text-display mb-6 text-2xl font-semibold">Get In Touch</h2>
               <ul className="space-y-5">
@@ -84,7 +89,7 @@ export function Contact() {
             </div>
 
             <div className="grid grid-cols-3 gap-4 text-center">
-              {['500+ Happy Clients', 'Atlanta-Based', 'Fast Turnaround'].map((t) => (
+              {['From $250', '7–10 Day Photo', '10–14 Day Video'].map((t) => (
                 <div key={t} className="card-dark p-4 text-xs font-semibold uppercase tracking-wide text-brand-muted">
                   {t}
                 </div>
@@ -93,6 +98,8 @@ export function Contact() {
           </div>
         </div>
       </section>
+
+      <HowItWorks />
     </>
   );
 }
