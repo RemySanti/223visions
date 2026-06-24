@@ -39,6 +39,15 @@
     color: #fff;
   }
 
+  select {
+    color-scheme: dark;
+  }
+
+  select option {
+    background-color: var(--color-brand-surface);
+    color: var(--color-brand-offwhite);
+  }
+
   /* Ambient glow — red & magenta from logo */
   body::before {
     content: '';

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 
 export function CTABand({
   headline = 'Ready to Tell Your Story?',
   subtext = 'Based in Atlanta. Available Nationwide.',
-  buttonLabel = 'Book Your Session Now',
-  buttonTo = '/contact',
+  buttonLabel = PRIMARY_CTA_LABEL,
+  buttonTo = PRIMARY_CTA_PATH,
   external = false,
   href,
 }) {

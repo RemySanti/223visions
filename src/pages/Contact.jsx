@@ -4,14 +4,14 @@ import { ContactForm } from '../components/ContactForm';
 import { BookingExpectations } from '../components/BookingExpectations';
 import { HowItWorks } from '../components/HowItWorks';
 import { SEOHead, localBusinessSchema } from '../components/SEOHead';
-import { EMAIL, INSTAGRAM, INSTAGRAM_HANDLE } from '../data/constants';
+import { EMAIL, INSTAGRAM, INSTAGRAM_HANDLE, PRIMARY_CTA_LABEL } from '../data/constants';
 
 export function Contact() {
   return (
     <>
       <SEOHead
-        title="Book a Session"
-        description="Book Atlanta photography and videography with 223 Visions. Request a quote or schedule your hybrid session today."
+        title={PRIMARY_CTA_LABEL}
+        description="Start your Atlanta photography or videography project with 223 Visions. Tell us about your goals and we'll respond with a custom plan within 24 hours."
         path="/contact"
         jsonLd={localBusinessSchema()}
       />
@@ -23,7 +23,7 @@ export function Contact() {
             animate={{ opacity: 1, y: 0 }}
             className="text-display text-5xl font-bold"
           >
-            Book a Session
+            {PRIMARY_CTA_LABEL}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -31,8 +31,9 @@ export function Contact() {
             transition={{ delay: 0.1 }}
             className="mx-auto mt-4 max-w-xl text-brand-muted"
           >
-            Complete the form below for an accurate quote. Atlanta photography, videography, and
-            hybrid coverage — businesses, athletes, churches, and creators.
+            Tell us about your shoot — we&apos;ll respond within 24 hours with a custom plan. Atlanta
+            photography, videography, and hybrid coverage for businesses, athletes, churches, and
+            creators.
           </motion.p>
         </div>
       </section>

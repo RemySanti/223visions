@@ -15,7 +15,7 @@ export function FAQSection({ limit }) {
             Questions
           </p>
           <h2 className="mt-3 text-display text-4xl font-bold md:text-5xl">
-            Before You Book
+            Before You Start
           </h2>
           <p className="mt-4 text-brand-muted">
             Straight answers on pricing, turnaround, and what happens after you inquire.

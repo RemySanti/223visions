@@ -9,7 +9,7 @@ export function ServiceQuickPickGrid() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-magenta">
-            What Are You Booking?
+            What Are You Planning?
           </p>
           <h2 className="mt-3 text-display text-4xl font-bold md:text-5xl">Pick Your Project</h2>
           <p className="mt-4 text-brand-muted">
@@ -36,6 +36,7 @@ export function ServiceQuickPickGrid() {
                     alt={item.label}
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={item.imagePosition ? { objectPosition: item.imagePosition } : undefined}
                   />
                 </div>
                 <div className="flex items-end justify-between gap-2 p-5">

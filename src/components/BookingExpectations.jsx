@@ -4,7 +4,7 @@ export function BookingExpectations({ compact = false }) {
   if (compact) {
     return (
       <div className="card-dark p-6">
-        <h2 className="text-display text-xl font-semibold">What Happens After You Book</h2>
+        <h2 className="text-display text-xl font-semibold">What Happens Next</h2>
         <ol className="mt-4 space-y-4">
           {BOOKING_STEPS.map((step) => (
             <li key={step.step} className="flex gap-3">
@@ -22,7 +22,7 @@ export function BookingExpectations({ compact = false }) {
 
   return (
     <div className="card-dark p-8">
-      <h2 className="text-display mb-2 text-2xl font-semibold">What Happens After You Book</h2>
+      <h2 className="text-display mb-2 text-2xl font-semibold">What Happens Next</h2>
       <p className="mb-6 text-sm text-brand-muted">
         After you submit, here is the typical timeline — no surprises.
       </p>

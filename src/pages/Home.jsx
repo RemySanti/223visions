@@ -44,7 +44,7 @@ export function Home() {
     <>
       <SEOHead
         title="223 Visions | Atlanta Photography & Videography Agency"
-        description="Atlanta's #1 hybrid shooting agency. Photography, videography, and hybrid coverage. Book your session today."
+        description="Atlanta's #1 hybrid shooting agency. Photography, videography, and hybrid coverage. Start your project today."
         path="/"
         jsonLd={localBusinessSchema()}
       />

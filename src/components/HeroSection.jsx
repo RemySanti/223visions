@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { BOOKING_URL } from '../data/constants';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 
 const HERO_VIDEO = '/hero.mp4';
 const HERO_POSTER = '/hero-poster.jpg';
@@ -10,7 +10,7 @@ export function HeroSection({
   headline = "We Don't Just Capture Moments. We Create Them.",
   subheadline = "Atlanta's Premier Hybrid Photography & Videography Agency",
   showPpcLine = false,
-  primaryCta = { label: 'Book a Session', href: BOOKING_URL, external: true },
+  primaryCta = { label: PRIMARY_CTA_LABEL, to: PRIMARY_CTA_PATH },
   secondaryCta = { label: 'View Our Work', to: '/portfolio' },
 }) {
   const scrollToContent = () => {
@@ -44,7 +44,7 @@ export function HeroSection({
             transition={{ delay: 0.1 }}
             className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-brand-magenta"
           >
-            Atlanta Photography &amp; Videography | Book Your Session Today
+            Atlanta Photography &amp; Videography | Start Your Project Today
           </motion.p>
         )}
 

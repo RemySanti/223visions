@@ -11,7 +11,8 @@ export function HowItWorks() {
           </p>
           <h2 className="mt-3 text-display text-4xl font-bold md:text-5xl">How It Works</h2>
           <p className="mt-4 text-brand-muted">
-            From first message to final delivery — here is what to expect when you book 223 Visions.
+            From first message to final delivery — here is what to expect when you start a project with
+            223 Visions.
           </p>
         </div>
 

@@ -3,14 +3,14 @@ import { ContactForm } from '../components/ContactForm';
 import { BookingExpectations } from '../components/BookingExpectations';
 import { SEOHead } from '../components/SEOHead';
 import { Logo } from '../components/Logo';
-import { EMAIL } from '../data/constants';
+import { EMAIL, PRIMARY_CTA_LABEL } from '../data/constants';
 
 export function Landing() {
   return (
     <>
       <SEOHead
-        title="Book a Session"
-        description="Book Atlanta photography and videography with 223 Visions. Limited availability — request your session today."
+        title={PRIMARY_CTA_LABEL}
+        description="Start your Atlanta photography or videography project with 223 Visions. Limited availability — tell us about your shoot today."
         path="/landing"
         noindex
       />
@@ -34,9 +34,7 @@ export function Landing() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">
               Atlanta Photography &amp; Videography
             </p>
-            <h1 className="text-display mt-3 text-4xl font-bold">
-              Book Your Session Today
-            </h1>
+            <h1 className="text-display mt-3 text-4xl font-bold">{PRIMARY_CTA_LABEL}</h1>
             <p className="mt-3 text-brand-muted">
               Photography from $250 · Video from $350 · Hybrid from $550
             </p>

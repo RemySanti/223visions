@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
 import { Aperture, Monitor } from 'lucide-react';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 
 export function About() {
   return (
@@ -42,8 +43,8 @@ export function About() {
               We work with brands, churches, artists, and families who refuse generic content.
               Every frame is intentional. Every edit serves the story.
             </p>
-            <Link to="/contact" className="btn-primary mt-8 inline-flex">
-              Work With Us
+            <Link to={PRIMARY_CTA_PATH} className="btn-primary mt-8 inline-flex">
+              {PRIMARY_CTA_LABEL}
             </Link>
           </motion.div>
         </div>

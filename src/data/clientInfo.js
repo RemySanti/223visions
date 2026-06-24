@@ -86,7 +86,7 @@ export const BOOKING_STEPS = [
   {
     step: 1,
     title: 'Send Your Inquiry',
-    description: 'Fill out the form or book online. We respond within 24 hours with a custom quote.',
+    description: 'Share your vision through the form below. We respond within 24 hours with a custom quote and next steps.',
   },
   {
     step: 2,
@@ -153,15 +153,15 @@ export function getSeasonalAvailabilityNote(date = new Date()) {
   const month = date.getMonth(); // 0 = Jan … 11 = Dec
 
   if (month >= 2 && month <= 4) {
-    return 'Spring portrait and event dates are filling quickly — book early to secure your spot.';
+    return 'Spring portrait and event dates are filling quickly — start early to secure your spot.';
   }
   if (month >= 5 && month <= 7) {
-    return 'Summer event and portrait dates are filling quickly — book early to secure your spot.';
+    return 'Summer event and portrait dates are filling quickly — start early to secure your spot.';
   }
   if (month >= 8 && month <= 10) {
-    return 'Fall wedding and event dates are filling quickly — book early to secure your spot.';
+    return 'Fall wedding and event dates are filling quickly — start early to secure your spot.';
   }
-  return 'Holiday and winter session dates are limited — book early to secure your spot.';
+  return 'Holiday and winter session dates are limited — start early to secure your spot.';
 }
 
 export const GOOGLE_REVIEWS = {
@@ -215,6 +215,7 @@ export const SERVICE_QUICK_PICKS = [
     project: 'Event',
     service: 'Hybrid (Photo + Video)',
     image: '/portfolio/weddings/1h4a0130.jpg',
+    imagePosition: 'center 25%',
   },
   {
     id: 'branding',
@@ -231,6 +232,7 @@ export const SERVICE_QUICK_PICKS = [
     project: 'Headshots',
     service: 'Photography',
     image: '/portfolio/portrait/1h4a0002.jpg',
+    imagePosition: 'center 30%',
   },
   {
     id: 'church',
@@ -247,6 +249,7 @@ export const SERVICE_QUICK_PICKS = [
     project: 'Corporate',
     service: 'Video',
     image: '/portfolio/events/IMG_2332.jpg',
+    imagePosition: 'center 20%',
   },
   {
     id: 'fitness',
@@ -255,5 +258,6 @@ export const SERVICE_QUICK_PICKS = [
     project: 'Fitness Content',
     service: 'Video',
     image: '/portfolio/portrait/6s3a8673.jpg',
+    imagePosition: 'center 20%',
   },
 ];

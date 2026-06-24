@@ -6,6 +6,7 @@ import { CTABand } from '../components/CTABand';
 import { PackagesSection } from '../components/PackagesSection';
 import { FAQSection } from '../components/FAQSection';
 import { CORE_PACKAGES } from '../data/clientInfo';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 
 const blocks = [
   {
@@ -126,8 +127,8 @@ export function Services() {
                   </li>
                 ))}
               </ul>
-              <Link to="/contact" className="btn-primary mt-8 inline-flex">
-                Book {block.title}
+              <Link to={PRIMARY_CTA_PATH} className="btn-primary mt-8 inline-flex">
+                {PRIMARY_CTA_LABEL}
               </Link>
             </motion.div>
 
@@ -154,9 +155,9 @@ export function Services() {
 
       <CTABand
         headline="Not sure which service fits?"
-        subtext="Book a free consultation — we'll map the right package to your goals."
-        buttonLabel="Book a Consultation"
-        buttonTo="/contact"
+        subtext="Tell us about your goals — we'll map the right package to your project."
+        buttonLabel={PRIMARY_CTA_LABEL}
+        buttonTo={PRIMARY_CTA_PATH}
       />
     </>
   );

@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
-import { BOOKING_URL } from '../data/constants';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 import { useNavOpacity } from '../hooks/useNavOpacity';
 
 const links = [
@@ -83,9 +83,9 @@ export function Navbar({ minimal = false, overlay = false }) {
               )}
             </NavLink>
           ))}
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary !py-2.5 !text-xs">
-            Book Now
-          </a>
+          <Link to={PRIMARY_CTA_PATH} className="btn-primary !py-2.5 !text-xs">
+            {PRIMARY_CTA_LABEL}
+          </Link>
         </nav>
 
         <button
@@ -138,14 +138,9 @@ export function Navbar({ minimal = false, overlay = false }) {
                   </NavLink>
                 </motion.div>
               ))}
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary mt-4 w-full text-center"
-              >
-                Book Now
-              </a>
+              <Link to={PRIMARY_CTA_PATH} className="btn-primary mt-4 w-full text-center">
+                {PRIMARY_CTA_LABEL}
+              </Link>
             </motion.nav>
           </>
         )}

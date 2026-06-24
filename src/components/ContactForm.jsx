@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   BUDGET_RANGES,
@@ -7,9 +7,12 @@ import {
   PROJECT_TYPES,
   SERVICE_OPTIONS,
 } from '../data/clientInfo';
+import { submitContactToGhl } from '../lib/submitContactToGhl';
 
 const inputClass =
-  'w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-brand-offwhite outline-none focus:border-brand-red';
+  'w-full rounded-lg border border-white/10 bg-brand-black px-4 py-3 text-brand-offwhite outline-none focus:border-brand-red';
+
+const selectClass = `${inputClass} scheme-dark cursor-pointer`;
 
 function matchServiceOption(param) {
   if (!param) return 'Not sure yet';
@@ -44,7 +47,10 @@ export function ContactForm({ onSuccess }) {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
@@ -59,11 +65,28 @@ export function ContactForm({ onSuccess }) {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    if (onSuccess) onSuccess();
-    else navigate('/thank-you');
+    setSubmitting(true);
+    setError('');
+
+    try {
+      await submitContactToGhl(form, {
+        formPage: location.pathname,
+        referrer: document.referrer || '',
+      });
+      setSubmitted(true);
+      if (onSuccess) onSuccess();
+      else navigate('/thank-you');
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : 'Something went wrong. Please try again or email us directly.'
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -132,9 +155,11 @@ export function ContactForm({ onSuccess }) {
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-brand-muted">
             Project Type
           </span>
-          <select name="projectType" value={form.projectType} onChange={handleChange} className={inputClass}>
+          <select name="projectType" value={form.projectType} onChange={handleChange} className={selectClass}>
             {PROJECT_TYPES.map((t) => (
-              <option key={t}>{t}</option>
+              <option key={t} value={t}>
+                {t}
+              </option>
             ))}
           </select>
         </label>
@@ -142,11 +167,13 @@ export function ContactForm({ onSuccess }) {
           <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-brand-muted">
             Services Needed
           </span>
-          <select name="service" value={form.service} onChange={handleChange} className={inputClass}>
+          <select name="service" value={form.service} onChange={handleChange} className={selectClass}>
             {SERVICE_OPTIONS.map((s) => (
-              <option key={s}>{s}</option>
+              <option key={s} value={s}>
+                {s}
+              </option>
             ))}
-            <option>Not sure yet</option>
+            <option value="Not sure yet">Not sure yet</option>
           </select>
         </label>
       </div>
@@ -201,9 +228,11 @@ export function ContactForm({ onSuccess }) {
         <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-brand-muted">
           Budget Range
         </span>
-        <select name="budget" value={form.budget} onChange={handleChange} className={inputClass}>
+        <select name="budget" value={form.budget} onChange={handleChange} className={selectClass}>
           {BUDGET_RANGES.map((b) => (
-            <option key={b}>{b}</option>
+            <option key={b} value={b}>
+              {b}
+            </option>
           ))}
         </select>
       </label>
@@ -225,12 +254,19 @@ export function ContactForm({ onSuccess }) {
 
       <motion.button
         type="submit"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className="btn-primary w-full"
+        disabled={submitting}
+        whileHover={submitting ? undefined : { scale: 1.02 }}
+        whileTap={submitting ? undefined : { scale: 0.98 }}
+        className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-60"
       >
-        Request My Quote
+        {submitting ? 'Sending...' : 'Request My Project'}
       </motion.button>
+
+      {error && (
+        <p className="text-center text-sm text-red-400" role="alert">
+          {error}
+        </p>
+      )}
     </form>
   );
 }

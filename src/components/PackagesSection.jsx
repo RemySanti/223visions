@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, Star } from 'lucide-react';
-import { BOOKING_URL } from '../data/constants';
 import { CORE_PACKAGES, SPECIALTY_PACKAGES } from '../data/clientInfo';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 
 function PackageCard({ pkg, index }) {
   return (
@@ -38,7 +38,7 @@ function PackageCard({ pkg, index }) {
         to={`/contact?service=${encodeURIComponent(pkg.title)}`}
         className={`mt-8 inline-flex w-full justify-center ${pkg.popular ? 'btn-primary' : 'btn-ghost'}`}
       >
-        Get a Quote
+        {PRIMARY_CTA_LABEL}
       </Link>
     </motion.article>
   );
@@ -90,11 +90,11 @@ export function PackagesSection({ showSpecialty = true, showBookingLink = false,
 
         {showBookingLink && (
           <p className="mt-8 text-center text-sm text-brand-muted">
-            Ready to lock in a date?{' '}
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-brand-red-light hover:underline">
-              Book online
-            </a>{' '}
-            or request a custom quote below.
+            Ready to move forward?{' '}
+            <Link to={PRIMARY_CTA_PATH} className="text-brand-red-light hover:underline">
+              {PRIMARY_CTA_LABEL}
+            </Link>{' '}
+            and we&apos;ll map the right package to your goals.
           </p>
         )}
       </div>

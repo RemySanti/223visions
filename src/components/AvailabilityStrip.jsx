@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CalendarClock } from 'lucide-react';
-import { BOOKING_URL } from '../data/constants';
+import { PRIMARY_CTA_LABEL, PRIMARY_CTA_PATH } from '../data/constants';
 import { AVAILABILITY, getSeasonalAvailabilityNote } from '../data/clientInfo';
 
 export function AvailabilityStrip() {
@@ -21,16 +21,11 @@ export function AvailabilityStrip() {
             <p className="text-xs text-brand-muted">{seasonalNote}</p>
           </div>
         </div>
-        <motion.a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="btn-primary shrink-0 !py-2.5 !text-xs"
-        >
-          Check Availability
-        </motion.a>
+        <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="shrink-0">
+          <Link to={PRIMARY_CTA_PATH} className="btn-primary inline-flex !py-2.5 !text-xs">
+            {PRIMARY_CTA_LABEL}
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
