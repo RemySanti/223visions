@@ -9,7 +9,7 @@ export const BOOKING_URL =
   'https://links.223visions.com/widget/bookings/christian-bates-personal-calendar-7uzyvudli';
 export const GHL_INBOUND_WEBHOOK_URL =
   import.meta.env.VITE_GHL_INBOUND_WEBHOOK_URL ||
-  'https://services.leadconnectorhq.com/hooks/e7Ea4Kqv7BvGV3nPQgoA/webhook-trigger/16522a3f-bfcb-4dd8-9ee8-981592764932';
+  'https://services.leadconnectorhq.com/hooks/e7Ea4Kqv7BvGV3nPQgoA/webhook-trigger/79a4e739-6ed1-4e3d-8dde-1b4f50333985';
 export const PRIMARY_CTA_LABEL = 'Start Your Project';
 export const PRIMARY_CTA_PATH = '/contact';
 export const GOOGLE_REVIEW_URL = 'https://share.google/gjUNnqGM35DZ9b0Gf';
