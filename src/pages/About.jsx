@@ -24,7 +24,7 @@ export function About() {
               src="/portfolio/portrait/6s3a9749.jpg"
               alt="223 Visions behind the scenes"
               loading="lazy"
-              className="aspect-[4/5] w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-auto grayscale transition-all duration-700 hover:grayscale-0"
             />
           </motion.div>
 

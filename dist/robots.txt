@@ -1,5 +1,10 @@
-﻿User-agent: *
+# 223 Visions — https://www.223visions.com
+User-agent: *
 Allow: /
 
-Sitemap: https://www.223visions.com/sitemap.xml
+Disallow: /internal/
+Disallow: /owner
+Disallow: /landing
+Disallow: /thank-you
 
+Sitemap: https://www.223visions.com/sitemap.xml

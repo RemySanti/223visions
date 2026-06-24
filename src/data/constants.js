@@ -3,6 +3,10 @@ export const SITE_NAME = '223 Visions';
 export const TAGLINE =
   "Atlanta's premier hybrid shooting agency for photography & videography";
 export const EMAIL = 'Christian@223visions.com';
+export const FORM_NOTIFICATION_EMAILS = [
+  'christian@223visions.com',
+  'remysanti10@gmail.com',
+];
 export const INSTAGRAM = 'https://www.instagram.com/223.visions/';
 export const INSTAGRAM_HANDLE = '@223.visions';
 export const BOOKING_URL =

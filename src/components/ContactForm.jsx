@@ -35,8 +35,7 @@ function matchProjectType(param) {
 export function ContactForm({ onSuccess }) {
   const [searchParams] = useSearchParams();
   const [form, setForm] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     phone: '',
     organization: '',

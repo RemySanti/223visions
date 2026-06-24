@@ -1,4 +1,5 @@
-﻿import { GHL_INBOUND_WEBHOOK_URL } from '../data/constants';
+import { GHL_INBOUND_WEBHOOK_URL } from '../data/constants';
+import { notifyFormSubmission } from './notifyFormSubmission';
 
 function splitName(name) {
   const trimmed = name.trim();
@@ -30,6 +31,7 @@ export function buildGhlContactPayload(form, meta = {}) {
     deliverables: form.deliverables.join(', '),
     message: form.message.trim(),
     source: '223 Visions Website',
+    notificationEmails: 'christian@223visions.com, remysanti10@gmail.com',
     ...meta,
   };
 }
@@ -58,6 +60,8 @@ export async function submitContactToGhl(form, meta = {}) {
   if (typeof data?.status === 'string' && data.status.toLowerCase().includes('error')) {
     throw new Error(data.status);
   }
+
+  notifyFormSubmission(payload).catch(() => {});
 
   return data;
 }
