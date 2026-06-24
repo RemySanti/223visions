@@ -7,6 +7,11 @@ import {
   INSTAGRAM_HANDLE,
   TAGLINE,
 } from '../data/constants';
+import { LOCATION_PAGES } from '../data/locationPages';
+
+const featuredAreas = LOCATION_PAGES.filter((l) =>
+  ['buckhead', 'midtown', 'decatur', 'sandy-springs', 'marietta', 'alpharetta'].includes(l.slug)
+);
 
 const quickLinks = [
   { to: '/', label: 'Home' },
@@ -41,7 +46,7 @@ export function Footer() {
   return (
     <footer className="relative z-10 mt-24 border-t border-white/10 bg-brand-black">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           <div>
             <Link to="/">
               <Logo className="h-28" />
@@ -84,6 +89,30 @@ export function Footer() {
                   {label}
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-display mb-4 text-lg font-semibold">Areas We Serve</h3>
+            <ul className="space-y-2">
+              {featuredAreas.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    to={`/areas/${area.slug}`}
+                    className="text-sm text-brand-muted transition-colors hover:text-brand-offwhite"
+                  >
+                    {area.name}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  to="/service-areas"
+                  className="text-sm text-brand-magenta hover:underline"
+                >
+                  All service areas →
+                </Link>
+              </li>
             </ul>
           </div>
 

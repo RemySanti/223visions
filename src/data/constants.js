@@ -10,6 +10,8 @@ export const BOOKING_URL =
 export const GHL_INBOUND_WEBHOOK_URL =
   import.meta.env.VITE_GHL_INBOUND_WEBHOOK_URL ||
   'https://services.leadconnectorhq.com/hooks/e7Ea4Kqv7BvGV3nPQgoA/webhook-trigger/79a4e739-6ed1-4e3d-8dde-1b4f50333985';
+export const GA_MEASUREMENT_ID =
+  import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-VCTLKQCZY5';
 export const PRIMARY_CTA_LABEL = 'Start Your Project';
 export const PRIMARY_CTA_PATH = '/contact';
 export const GOOGLE_REVIEW_URL = 'https://share.google/gjUNnqGM35DZ9b0Gf';

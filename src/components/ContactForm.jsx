@@ -8,6 +8,7 @@ import {
   SERVICE_OPTIONS,
 } from '../data/clientInfo';
 import { submitContactToGhl } from '../lib/submitContactToGhl';
+import { trackGenerateLead } from '../lib/analytics';
 
 const inputClass =
   'w-full rounded-lg border border-white/10 bg-brand-black px-4 py-3 text-brand-offwhite outline-none focus:border-brand-red';
@@ -34,14 +35,15 @@ function matchProjectType(param) {
 export function ContactForm({ onSuccess }) {
   const [searchParams] = useSearchParams();
   const [form, setForm] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     phone: '',
     organization: '',
     projectType: matchProjectType(searchParams.get('project')),
     service: matchServiceOption(searchParams.get('service')),
     date: '',
-    location: '',
+    location: searchParams.get('location') || '',
     budget: 'Not sure yet',
     deliverables: [],
     message: '',
@@ -74,6 +76,11 @@ export function ContactForm({ onSuccess }) {
       await submitContactToGhl(form, {
         formPage: location.pathname,
         referrer: document.referrer || '',
+      });
+      trackGenerateLead({
+        project_type: form.projectType,
+        service: form.service,
+        form_page: location.pathname,
       });
       setSubmitted(true);
       if (onSuccess) onSuccess();

@@ -6,6 +6,7 @@ import { ScrollProgress } from './components/ScrollProgress';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BookingSignal } from './components/BookingSignal';
 import { StickyBookBar } from './components/StickyBookBar';
+import { Ga4PageView } from './components/Ga4PageView';
 import { Home } from './pages/Home';
 
 const Services = lazy(() => import('./pages/Services').then((m) => ({ default: m.Services })));
@@ -14,6 +15,9 @@ const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About
 const Contact = lazy(() => import('./pages/Contact').then((m) => ({ default: m.Contact })));
 const ServiceAreas = lazy(() =>
   import('./pages/ServiceAreas').then((m) => ({ default: m.ServiceAreas }))
+);
+const LocationPage = lazy(() =>
+  import('./pages/LocationPage').then((m) => ({ default: m.LocationPage }))
 );
 const Landing = lazy(() => import('./pages/Landing').then((m) => ({ default: m.Landing })));
 const ThankYou = lazy(() => import('./pages/ThankYou').then((m) => ({ default: m.ThankYou })));
@@ -101,6 +105,14 @@ function AnimatedRoutes() {
                 </Layout>
               }
             />
+            <Route
+              path="/areas/:slug"
+              element={
+                <Layout>
+                  <LocationPage />
+                </Layout>
+              }
+            />
             <Route path="/landing" element={<Landing />} />
             <Route
               path="/owner"
@@ -136,6 +148,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <Ga4PageView />
       <ScrollToTop />
       <ScrollProgress />
       <BookingSignal />
