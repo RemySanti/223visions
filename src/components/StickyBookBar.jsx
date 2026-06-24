@@ -13,11 +13,14 @@ export function StickyBookBar() {
       <div className="mx-auto flex max-w-lg items-center gap-3 sm:max-w-2xl">
         <Link
           to={PRIMARY_CTA_PATH}
-          className="btn-primary flex flex-1 items-center justify-center gap-2 !py-3 !text-xs sm:!text-sm"
+          className="btn-primary flex flex-1 items-center justify-center whitespace-nowrap !px-3 !py-3 !text-[11px] !tracking-wide sm:!px-6 sm:!text-sm sm:!tracking-wider"
         >
           {PRIMARY_CTA_LABEL}
         </Link>
-        <Link to="/portfolio" className="btn-ghost flex flex-1 justify-center !py-3 !text-xs sm:!text-sm">
+        <Link
+          to="/portfolio"
+          className="btn-ghost flex flex-1 items-center justify-center whitespace-nowrap !px-3 !py-3 !text-[11px] !tracking-wide sm:!px-6 sm:!text-sm sm:!tracking-wider"
+        >
           View Portfolio
         </Link>
       </div>
