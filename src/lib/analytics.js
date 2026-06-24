@@ -1,4 +1,4 @@
-﻿import { GA_MEASUREMENT_ID } from '../data/constants';
+﻿import { CLARITY_PROJECT_ID, GA_MEASUREMENT_ID } from '../data/constants';
 
 const SKIP_PATH_PREFIXES = ['/internal/', '/owner'];
 
@@ -40,4 +40,27 @@ export function trackGenerateLead(params = {}) {
   if (!window.gtag || !GA_MEASUREMENT_ID) return;
 
   window.gtag('event', 'generate_lead', params);
+}
+
+/** Heatmaps + session recordings (Microsoft Clarity). */
+export function initClarity() {
+  if (!CLARITY_PROJECT_ID || typeof window === 'undefined' || window.clarity) return;
+
+  (function (c, l, a, r, i, t, y) {
+    c[a] =
+      c[a] ||
+      function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = 'https://www.clarity.ms/tag/' + i;
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', CLARITY_PROJECT_ID);
+}
+
+export function clarityEvent(name, value) {
+  if (!window.clarity || !CLARITY_PROJECT_ID) return;
+  window.clarity('event', name, value);
 }

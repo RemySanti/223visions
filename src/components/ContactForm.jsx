@@ -8,7 +8,7 @@ import {
   SERVICE_OPTIONS,
 } from '../data/clientInfo';
 import { submitContactToGhl } from '../lib/submitContactToGhl';
-import { trackGenerateLead } from '../lib/analytics';
+import { trackGenerateLead, clarityEvent } from '../lib/analytics';
 
 const inputClass =
   'w-full rounded-lg border border-white/10 bg-brand-black px-4 py-3 text-brand-offwhite outline-none focus:border-brand-red';
@@ -82,6 +82,7 @@ export function ContactForm({ onSuccess }) {
         service: form.service,
         form_page: location.pathname,
       });
+      clarityEvent('generate_lead', form.projectType);
       setSubmitted(true);
       if (onSuccess) onSuccess();
       else navigate('/thank-you');
