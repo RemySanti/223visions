@@ -3,11 +3,11 @@ import { useLocation } from 'react-router-dom';
 import { trackPageView } from '../lib/analytics';
 
 export function Ga4PageView() {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
-    trackPageView(pathname);
-  }, [pathname]);
+    trackPageView(`${pathname}${search}`);
+  }, [pathname, search]);
 
   return null;
 }
