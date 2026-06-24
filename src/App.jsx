@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Layout } from './components/Layout';
 import { ScrollProgress } from './components/ScrollProgress';
+import { ScrollToTop } from './components/ScrollToTop';
+import { BookingSignal } from './components/BookingSignal';
 import { Home } from './pages/Home';
 
 const Services = lazy(() => import('./pages/Services').then((m) => ({ default: m.Services })));
@@ -14,6 +16,9 @@ const ServiceAreas = lazy(() =>
 );
 const Landing = lazy(() => import('./pages/Landing').then((m) => ({ default: m.Landing })));
 const ThankYou = lazy(() => import('./pages/ThankYou').then((m) => ({ default: m.ThankYou })));
+const MarketingTierList = lazy(() =>
+  import('./components/marketing/MarketingTierListPage').then((m) => ({ default: m.MarketingTierList }))
+);
 
 function PageLoader() {
   return (
@@ -94,6 +99,14 @@ function AnimatedRoutes() {
             />
             <Route path="/landing" element={<Landing />} />
             <Route
+              path="/internal/marketing-roadmap"
+              element={
+                <Layout minimalNav hideFooter>
+                  <MarketingTierList />
+                </Layout>
+              }
+            />
+            <Route
               path="/thank-you"
               element={
                 <Layout>
@@ -111,7 +124,9 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <ScrollProgress />
+      <BookingSignal />
       <AnimatedRoutes />
     </BrowserRouter>
   );
