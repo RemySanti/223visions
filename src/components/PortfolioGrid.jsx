@@ -85,7 +85,10 @@ export function PortfolioGrid({
               <img
                 src={item.thumb || item.image}
                 alt={item.title}
+                width={item.width}
+                height={item.height}
                 loading="lazy"
+                decoding="async"
                 className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/65 group-hover:opacity-100">

@@ -21,6 +21,7 @@ const LocationPage = lazy(() =>
 );
 const Landing = lazy(() => import('./pages/Landing').then((m) => ({ default: m.Landing })));
 const ThankYou = lazy(() => import('./pages/ThankYou').then((m) => ({ default: m.ThankYou })));
+const NotFound = lazy(() => import('./pages/NotFound').then((m) => ({ default: m.NotFound })));
 const MarketingTierList = lazy(() =>
   import('./components/marketing/MarketingTierListPage').then((m) => ({ default: m.MarketingTierList }))
 );
@@ -135,6 +136,14 @@ function AnimatedRoutes() {
               element={
                 <Layout>
                   <ThankYou />
+                </Layout>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <Layout>
+                  <NotFound />
                 </Layout>
               }
             />

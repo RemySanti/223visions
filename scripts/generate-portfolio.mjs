@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '../public/portfolio');
@@ -17,17 +18,21 @@ const meta = {
   },
 };
 
+// Used elsewhere on the site (About, quick picks), not part of the portfolio grid
+const exclude = new Set(['christian-bates.jpg', '6s3a8673.jpg', '6s3a9749.jpg']);
 const exts = new Set(['.jpg', '.jpeg', '.png', '.webp', '.JPG', '.JPEG', '.PNG']);
 let id = 1;
 const items = [];
 
 for (const folder of Object.keys(meta).sort()) {
   const dir = path.join(root, folder);
-  const files = fs.readdirSync(dir).filter((f) => exts.has(path.extname(f))).sort();
+  const files = fs.readdirSync(dir).filter((f) => exts.has(path.extname(f)) && !exclude.has(f)).sort();
   const m = meta[folder];
 
-  files.forEach((file, index) => {
+  for (const [index, file] of files.entries()) {
     const enc = encodeURIComponent(file);
+    const thumbFile = encodeURIComponent(`${path.parse(file).name}.webp`);
+    const { width, height } = await sharp(path.join(dir, file)).metadata();
     items.push({
       id: id++,
       title: `${m.titlePrefix}${files.length > 1 ? ` ${index + 1}` : ''}`,
@@ -35,9 +40,11 @@ for (const folder of Object.keys(meta).sort()) {
       filter: m.filter,
       folder,
       image: `/portfolio/${folder}/${enc}`,
-      thumb: `/portfolio/${folder}/${enc}`,
+      thumb: `/portfolio/_thumbs/${folder}/${thumbFile}`,
+      width,
+      height,
     });
-  });
+  }
 }
 
 function pickHomeFeatured(all) {

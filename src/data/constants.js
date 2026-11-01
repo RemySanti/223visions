@@ -21,7 +21,7 @@ export const CLARITY_PROJECT_ID =
 export const PRIMARY_CTA_LABEL = 'Start Your Project';
 export const PRIMARY_CTA_PATH = '/contact';
 export const GOOGLE_REVIEW_URL = 'https://share.google/gjUNnqGM35DZ9b0Gf';
-export const DEFAULT_OG_IMAGE = '/portfolio/weddings/1h4a0130.jpg';
+export const DEFAULT_OG_IMAGE = '/og-image.jpg';
 
 export const DEFAULT_DESCRIPTION =
   "223 Visions is Atlanta's premier hybrid photography and videography agency. We capture your moments with cinematic precision. Start your project today.";

@@ -9,7 +9,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2048.jpg",
-    "thumb": "/portfolio/church/1h4a2048.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2048.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 2,
@@ -18,7 +20,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2074.jpg",
-    "thumb": "/portfolio/church/1h4a2074.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2074.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 3,
@@ -27,7 +31,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2080.jpg",
-    "thumb": "/portfolio/church/1h4a2080.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2080.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 4,
@@ -36,7 +42,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2096.jpg",
-    "thumb": "/portfolio/church/1h4a2096.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2096.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 5,
@@ -45,7 +53,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2216.jpg",
-    "thumb": "/portfolio/church/1h4a2216.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2216.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 6,
@@ -54,7 +64,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2277.jpg",
-    "thumb": "/portfolio/church/1h4a2277.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2277.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 7,
@@ -63,7 +75,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2300.jpg",
-    "thumb": "/portfolio/church/1h4a2300.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2300.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 8,
@@ -72,7 +86,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2338.jpg",
-    "thumb": "/portfolio/church/1h4a2338.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2338.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 9,
@@ -81,7 +97,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9351.jpg",
-    "thumb": "/portfolio/church/1h4a9351.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9351.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 10,
@@ -90,7 +108,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9352.jpg",
-    "thumb": "/portfolio/church/1h4a9352.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9352.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 11,
@@ -99,7 +119,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9535.jpg",
-    "thumb": "/portfolio/church/1h4a9535.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9535.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 12,
@@ -108,7 +130,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9544.jpg",
-    "thumb": "/portfolio/church/1h4a9544.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9544.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 13,
@@ -117,7 +141,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9571.jpg",
-    "thumb": "/portfolio/church/1h4a9571.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9571.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 14,
@@ -126,7 +152,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9611.jpg",
-    "thumb": "/portfolio/church/1h4a9611.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9611.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 15,
@@ -135,7 +163,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9620.jpg",
-    "thumb": "/portfolio/church/1h4a9620.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9620.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 16,
@@ -144,7 +174,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a9628.jpg",
-    "thumb": "/portfolio/church/1h4a9628.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a9628.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 17,
@@ -153,7 +185,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2325.jpg",
-    "thumb": "/portfolio/events/IMG_2325.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2325.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 18,
@@ -162,7 +196,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2326.jpg",
-    "thumb": "/portfolio/events/IMG_2326.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2326.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 19,
@@ -171,7 +207,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2327.jpg",
-    "thumb": "/portfolio/events/IMG_2327.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2327.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 20,
@@ -180,7 +218,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2331.jpg",
-    "thumb": "/portfolio/events/IMG_2331.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2331.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 21,
@@ -189,7 +229,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2332.jpg",
-    "thumb": "/portfolio/events/IMG_2332.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2332.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 22,
@@ -198,7 +240,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2333.jpg",
-    "thumb": "/portfolio/events/IMG_2333.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2333.webp",
+    "width": 2400,
+    "height": 1819
   },
   {
     "id": 23,
@@ -207,7 +251,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0002.jpg",
-    "thumb": "/portfolio/portrait/1h4a0002.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0002.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 24,
@@ -216,7 +262,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0222.jpg",
-    "thumb": "/portfolio/portrait/1h4a0222.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0222.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 25,
@@ -225,7 +273,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0224.jpg",
-    "thumb": "/portfolio/portrait/1h4a0224.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0224.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 26,
@@ -233,8 +283,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/1h4a1923.JPG",
-    "thumb": "/portfolio/portrait/1h4a1923.JPG"
+    "image": "/portfolio/portrait/1h4a1923.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/1h4a1923.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 27,
@@ -242,8 +294,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/1h4a1954.JPG",
-    "thumb": "/portfolio/portrait/1h4a1954.JPG"
+    "image": "/portfolio/portrait/1h4a1954.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/1h4a1954.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 28,
@@ -251,8 +305,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/1h4a1958.JPG",
-    "thumb": "/portfolio/portrait/1h4a1958.JPG"
+    "image": "/portfolio/portrait/1h4a1958.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/1h4a1958.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 29,
@@ -260,8 +316,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/1h4a2112.JPG",
-    "thumb": "/portfolio/portrait/1h4a2112.JPG"
+    "image": "/portfolio/portrait/1h4a2112.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/1h4a2112.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 30,
@@ -269,8 +327,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/1h4a2147.JPG",
-    "thumb": "/portfolio/portrait/1h4a2147.JPG"
+    "image": "/portfolio/portrait/1h4a2147.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/1h4a2147.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 31,
@@ -279,7 +339,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a9920.jpg",
-    "thumb": "/portfolio/portrait/1h4a9920.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a9920.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 32,
@@ -288,7 +350,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a9922.jpg",
-    "thumb": "/portfolio/portrait/1h4a9922.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a9922.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 33,
@@ -297,7 +361,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a9953%20(1).jpg",
-    "thumb": "/portfolio/portrait/1h4a9953%20(1).jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a9953%20(1).webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 34,
@@ -306,7 +372,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a9953.jpg",
-    "thumb": "/portfolio/portrait/1h4a9953.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a9953.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 35,
@@ -315,7 +383,9 @@ export const portfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a9962.jpg",
-    "thumb": "/portfolio/portrait/1h4a9962.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a9962.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 36,
@@ -323,8 +393,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/IMG_4341.JPG",
-    "thumb": "/portfolio/portrait/IMG_4341.JPG"
+    "image": "/portfolio/portrait/IMG_4341.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/IMG_4341.webp",
+    "width": 1636,
+    "height": 2400
   },
   {
     "id": 37,
@@ -332,8 +404,10 @@ export const portfolioItems = [
     "category": "Photo",
     "filter": "Photography",
     "folder": "portrait",
-    "image": "/portfolio/portrait/IMG_4342.JPG",
-    "thumb": "/portfolio/portrait/IMG_4342.JPG"
+    "image": "/portfolio/portrait/IMG_4342.jpg",
+    "thumb": "/portfolio/_thumbs/portrait/IMG_4342.webp",
+    "width": 1663,
+    "height": 2400
   },
   {
     "id": 38,
@@ -342,7 +416,9 @@ export const portfolioItems = [
     "filter": "Videography",
     "folder": "video-productions",
     "image": "/portfolio/video-productions/1h4a2125.jpg",
-    "thumb": "/portfolio/video-productions/1h4a2125.jpg"
+    "thumb": "/portfolio/_thumbs/video-productions/1h4a2125.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 39,
@@ -351,7 +427,9 @@ export const portfolioItems = [
     "filter": "Videography",
     "folder": "video-productions",
     "image": "/portfolio/video-productions/1h4a2152.jpg",
-    "thumb": "/portfolio/video-productions/1h4a2152.jpg"
+    "thumb": "/portfolio/_thumbs/video-productions/1h4a2152.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 40,
@@ -360,7 +438,9 @@ export const portfolioItems = [
     "filter": "Videography",
     "folder": "video-productions",
     "image": "/portfolio/video-productions/1h4a2170.jpg",
-    "thumb": "/portfolio/video-productions/1h4a2170.jpg"
+    "thumb": "/portfolio/_thumbs/video-productions/1h4a2170.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 41,
@@ -369,7 +449,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0130.jpg",
-    "thumb": "/portfolio/weddings/1h4a0130.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0130.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 42,
@@ -378,7 +460,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0133.jpg",
-    "thumb": "/portfolio/weddings/1h4a0133.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0133.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 43,
@@ -387,7 +471,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0143.jpg",
-    "thumb": "/portfolio/weddings/1h4a0143.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0143.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 44,
@@ -396,7 +482,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a3588.jpg",
-    "thumb": "/portfolio/weddings/1h4a3588.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a3588.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 45,
@@ -405,7 +493,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a3597.jpg",
-    "thumb": "/portfolio/weddings/1h4a3597.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a3597.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 46,
@@ -414,7 +504,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a3744.jpg",
-    "thumb": "/portfolio/weddings/1h4a3744.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a3744.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 47,
@@ -423,7 +515,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a3890.jpg",
-    "thumb": "/portfolio/weddings/1h4a3890.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a3890.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 48,
@@ -432,7 +526,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6502.jpg",
-    "thumb": "/portfolio/weddings/1h4a6502.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6502.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 49,
@@ -441,7 +537,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6517.jpg",
-    "thumb": "/portfolio/weddings/1h4a6517.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6517.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 50,
@@ -450,7 +548,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6582.jpg",
-    "thumb": "/portfolio/weddings/1h4a6582.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6582.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 51,
@@ -459,7 +559,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6633.jpg",
-    "thumb": "/portfolio/weddings/1h4a6633.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6633.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 52,
@@ -468,7 +570,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6928.jpg",
-    "thumb": "/portfolio/weddings/1h4a6928.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6928.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 53,
@@ -477,7 +581,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a6939.jpg",
-    "thumb": "/portfolio/weddings/1h4a6939.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a6939.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 54,
@@ -486,7 +592,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7012.jpg",
-    "thumb": "/portfolio/weddings/1h4a7012.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7012.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 55,
@@ -495,7 +603,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7020.jpg",
-    "thumb": "/portfolio/weddings/1h4a7020.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7020.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 56,
@@ -504,7 +614,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7025.jpg",
-    "thumb": "/portfolio/weddings/1h4a7025.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7025.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 57,
@@ -513,7 +625,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7107.jpg",
-    "thumb": "/portfolio/weddings/1h4a7107.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7107.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 58,
@@ -522,7 +636,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7130.jpg",
-    "thumb": "/portfolio/weddings/1h4a7130.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7130.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 59,
@@ -531,7 +647,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7164.jpg",
-    "thumb": "/portfolio/weddings/1h4a7164.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7164.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 60,
@@ -540,7 +658,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7177.jpg",
-    "thumb": "/portfolio/weddings/1h4a7177.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7177.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 61,
@@ -549,7 +669,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7262.jpg",
-    "thumb": "/portfolio/weddings/1h4a7262.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7262.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 62,
@@ -558,7 +680,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7286.jpg",
-    "thumb": "/portfolio/weddings/1h4a7286.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7286.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 63,
@@ -567,7 +691,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7321.jpg",
-    "thumb": "/portfolio/weddings/1h4a7321.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7321.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 64,
@@ -576,7 +702,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7410.jpg",
-    "thumb": "/portfolio/weddings/1h4a7410.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7410.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 65,
@@ -585,7 +713,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a7434.jpg",
-    "thumb": "/portfolio/weddings/1h4a7434.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a7434.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 66,
@@ -594,7 +724,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0652.jpg",
-    "thumb": "/portfolio/weddings/1j0a0652.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0652.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 67,
@@ -603,7 +735,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0658.jpg",
-    "thumb": "/portfolio/weddings/1j0a0658.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0658.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 68,
@@ -612,7 +746,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0665.jpg",
-    "thumb": "/portfolio/weddings/1j0a0665.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0665.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 69,
@@ -621,7 +757,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0678.jpg",
-    "thumb": "/portfolio/weddings/1j0a0678.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0678.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 70,
@@ -630,7 +768,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0703.jpg",
-    "thumb": "/portfolio/weddings/1j0a0703.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0703.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 71,
@@ -639,7 +779,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0912.jpg",
-    "thumb": "/portfolio/weddings/1j0a0912.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0912.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 72,
@@ -648,7 +790,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0922.jpg",
-    "thumb": "/portfolio/weddings/1j0a0922.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0922.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 73,
@@ -657,7 +801,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0949.jpg",
-    "thumb": "/portfolio/weddings/1j0a0949.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0949.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 74,
@@ -666,7 +812,9 @@ export const portfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1j0a0984.jpg",
-    "thumb": "/portfolio/weddings/1j0a0984.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1j0a0984.webp",
+    "width": 1600,
+    "height": 2400
   }
 ];
 
@@ -678,7 +826,9 @@ export const homePortfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0130.jpg",
-    "thumb": "/portfolio/weddings/1h4a0130.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0130.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 42,
@@ -687,7 +837,9 @@ export const homePortfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0133.jpg",
-    "thumb": "/portfolio/weddings/1h4a0133.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0133.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 43,
@@ -696,7 +848,9 @@ export const homePortfolioItems = [
     "filter": "Hybrid",
     "folder": "weddings",
     "image": "/portfolio/weddings/1h4a0143.jpg",
-    "thumb": "/portfolio/weddings/1h4a0143.jpg"
+    "thumb": "/portfolio/_thumbs/weddings/1h4a0143.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 23,
@@ -705,7 +859,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0002.jpg",
-    "thumb": "/portfolio/portrait/1h4a0002.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0002.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 24,
@@ -714,7 +870,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0222.jpg",
-    "thumb": "/portfolio/portrait/1h4a0222.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0222.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 25,
@@ -723,7 +881,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "portrait",
     "image": "/portfolio/portrait/1h4a0224.jpg",
-    "thumb": "/portfolio/portrait/1h4a0224.jpg"
+    "thumb": "/portfolio/_thumbs/portrait/1h4a0224.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 1,
@@ -732,7 +892,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2048.jpg",
-    "thumb": "/portfolio/church/1h4a2048.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2048.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 2,
@@ -741,7 +903,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "church",
     "image": "/portfolio/church/1h4a2074.jpg",
-    "thumb": "/portfolio/church/1h4a2074.jpg"
+    "thumb": "/portfolio/_thumbs/church/1h4a2074.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 17,
@@ -750,7 +914,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2325.jpg",
-    "thumb": "/portfolio/events/IMG_2325.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2325.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 18,
@@ -759,7 +925,9 @@ export const homePortfolioItems = [
     "filter": "Photography",
     "folder": "events",
     "image": "/portfolio/events/IMG_2326.jpg",
-    "thumb": "/portfolio/events/IMG_2326.jpg"
+    "thumb": "/portfolio/_thumbs/events/IMG_2326.webp",
+    "width": 1600,
+    "height": 2400
   },
   {
     "id": 38,
@@ -768,7 +936,9 @@ export const homePortfolioItems = [
     "filter": "Videography",
     "folder": "video-productions",
     "image": "/portfolio/video-productions/1h4a2125.jpg",
-    "thumb": "/portfolio/video-productions/1h4a2125.jpg"
+    "thumb": "/portfolio/_thumbs/video-productions/1h4a2125.webp",
+    "width": 2400,
+    "height": 1600
   },
   {
     "id": 39,
@@ -777,6 +947,8 @@ export const homePortfolioItems = [
     "filter": "Videography",
     "folder": "video-productions",
     "image": "/portfolio/video-productions/1h4a2152.jpg",
-    "thumb": "/portfolio/video-productions/1h4a2152.jpg"
+    "thumb": "/portfolio/_thumbs/video-productions/1h4a2152.webp",
+    "width": 2400,
+    "height": 1600
   }
 ];
